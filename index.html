@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="An accessible HTML5 form demonstrating a variety of input types, validation, and semantic layout." />
+        <meta name="author" content="Amanuel Efrem" />
+        <meta name="keywords" content="Forms, Lists, Media insertion, Requirement, Validation, Enhanced HTML" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Week 3 Assignment</title>
+    </head>
+    <body>
+        <h1>CSS Basics & The Box Model</h1>
+          <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">My Website</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2>Welcome to the Box Model Demo</h2>
+        <p>
+            This is a simple example to demonstrate how margins, padding, and borders 
+            affect layout in CSS. Background colors help us visualize the box boundaries.
+        </p>
+        
+        <!-- Card Section -->
+        <div class="card">
+            <h3>Card Title</h3>
+            <p>
+                This is a card-like section with margin, padding, and border applied.
+                Notice how the spacing is created inside and outside the box.
+            </p>
+            <button class="btn">Learn More</button>
+        </div>
+    </div>
+     <div class="container">
+        <p> In this web page improved HTML document with different tags will be presented.</P>
+            <main>
+                <section>
+                    
+                    <h2>Ordered list </h2>
+                    <p>In HTML unordered lists are represented with numbers and Roman numbers with different writing methods.</p>
+                    <ol>
+                        <li>Numerals</li>
+                        <li>Small Roman numbers</li>
+                        <li>Capital Roman numbers</li>
+                    </ol>
+                    <h2>Unordered list </h2>
+                    <p>In HTML unordered lists are represented with bulletins with different shapes as following</p>
+                    <ul>
+                        <li>Circles</li>
+                        <li>Squares</li>
+                        <li>Boxes</li>
+                    </ul>
+                </section>  
+    
+                    <h2>Web development journey</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Programming Language</th>
+                                <th>Use cases</th>
+                                <th>Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td>To structure webs properly</td>
+                                <td>PLP Resources with MERN support</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>To make the design beuatifull and awesome</td>
+                                <td>YouTube videos </td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>To make the web page think</td>
+                                <td>Online resources from W3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+     </div>  
+    
+     <div class="container">
+        <h2>Media tagged into web</h2>
+                <p> To insert videos, audio, and image follows the same step. img tag bit different from the two, as there is no closing for it</p>
+ 
+                <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=K1RlET8T__s">
+                Your browser does not support the video tag.
+                </iframe> 
+
+                    
+               <br> <br>
+                
+                <p>The audio with control can be shown below</p> <br>
+                <audio controls>
+                    <source src="https://pixabay.com/music/alternative-hip-hop-cinematic-hip-hop-vlog-music-349853" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio> <br> <br>
+    
+                <img src="https://images.pexels.com/photos/13411721/pexels-photo-13411721.jpeg" alt="Woman in skrit dancing" width="600" height="800"> <br><br>
+     </div>
+     <div class="form">
+        <section>
+            <h2>Registration form</h2>
+            <form>
+                <label for="name">Name*:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"><br><br>
+    
+                <label for="password">Password*:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required><br><br>
+    
+                <label for="phone">Phone number:</label>
+                <input type="tel"  id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required ><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+    
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+                
+                
+                    <label>Select the choice that match your interests:</label> <br>
+                    <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                    <label><input type="checkbox" name="interests" value="music"> Music</label>
+                    <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+                    <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                    <label><input type="checkbox" name="interests" value="gaming"> Gaming</label>
+                    <br><br>
+                
+                
+                
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself" rows="4" cols="50"></textarea><br><br>
+    
+                <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter</label><br><br>
+
+    
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+     </div>          
+
+        </main>
+    </body>
+
+    <footer>
+        <p>&copy; 2025 Amanuel Efrem. All rights reserved.</p>
+    </footer>
+
+</html>
